@@ -1,0 +1,125 @@
+body {
+    background-color: antiquewhite;
+}
+
+.main,.banner,nav,.content {
+    padding: 15px;
+}
+
+.main {
+    border-color: black;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.banner,nav,.content {
+    margin-bottom: 20px;
+}
+
+.banner {
+    border-color: rgb(11, 192, 11);
+    background-color: rgba(73, 206, 95, 0.589);
+    text-align: center;
+    font-size: 55px;
+    font-family: "Teko", sans-serif;
+    text-shadow: 0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15),
+    0 30px 20px rgba(0,0,0,.1);
+    color: white
+}
+
+nav {
+    border-color: rgb(255, 0, 0);
+}
+
+.content {
+    border-color: rgb(64, 64, 253);
+    height: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    float: left;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: rgba(73, 206, 95, 0.589);
+    border: 2px solid;
+    border-color: rgb(11, 192, 11);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.close {
+    clear: both;
+}
+
+.doboz {
+    flex: 1;
+    text-align: center;
+}
+
+nav li:hover {
+    background-color: rgb(86, 156, 86);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+nav ul ul {
+    display: none;
+    opacity: 0;
+}
+
+nav li:hover > ul {
+    display: block;
+    opacity: 1; 
+}
+
+nav ul ul li {
+    float: none;
+    margin-top: 10px;
+    background-color: rgba(73, 206, 95, 0.7);
+    padding: 10px;
+    border: 2px solid rgb(11, 192, 11);
+    font-weight: normal;
+}
+
+nav ul ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul ul li:hover {
+    background-color: rgb(86, 156, 86);
+    transition: background-color 0.3s ease;
+}
+
+.content h1 {
+    text-align: center;
+    
+}
